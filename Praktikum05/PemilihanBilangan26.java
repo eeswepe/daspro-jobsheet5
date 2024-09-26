@@ -8,11 +8,8 @@ class PemilihanBilangan26{
 
         System.out.print("Masukkan sebuah angka: ");
         int angka = sc.nextInt();
+        String jenisBilangan = angka % 2 == 0 ? "genap" : "ganjil";
 
-        if(angka % 2 == 0){
-            System.out.println("Angka " + angka + " termasuk bilangan genap");
-        }else{
-            System.out.println("Angka " + angka + " termasuk bilangan ganjil");
-        }
+        System.out.println("Angka " + angka + " termasuk bilangan " + jenisBilangan);
     }
 }
